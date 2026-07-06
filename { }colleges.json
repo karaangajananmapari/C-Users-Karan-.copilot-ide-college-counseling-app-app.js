@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "name": "IIT Delhi",
+    "stream": "Engineering",
+    "location": "Delhi",
+    "fees": 220000,
+    "minScore": 85,
+    "budgetLevel": 3,
+    "tags": ["Technology", "High Demand"],
+    "description": "Top engineering institute with strong placements and research opportunities."
+  },
+  {
+    "id": "2",
+    "name": "AIIMS Delhi",
+    "stream": "Medical",
+    "location": "Delhi",
+    "fees": 180000,
+    "minScore": 85,
+    "budgetLevel": 2,
+    "tags": ["Healthcare", "High Demand"],
+    "description": "Premier medical college known for excellent clinical exposure."
+  },
+  {
+    "id": "3",
+    "name": "NMIMS Mumbai",
+    "stream": "Commerce",
+    "location": "Mumbai",
+    "fees": 300000,
+    "minScore": 75,
+    "budgetLevel": 3,
+    "tags": ["Business", "Technology"],
+    "description": "Popular for management and commerce programs with strong industry ties."
+  },
+  {
+    "id": "4",
+    "name": "Jadavpur University",
+    "stream": "Computer Science",
+    "location": "Kolkata",
+    "fees": 120000,
+    "minScore": 75,
+    "budgetLevel": 2,
+    "tags": ["Technology", "Research"],
+    "description": "A respected public university for computer science and engineering."
+  },
+  {
+    "id": "5",
+    "name": "Christ University",
+    "stream": "Arts",
+    "location": "Bengaluru",
+    "fees": 160000,
+    "minScore": 65,
+    "budgetLevel": 2,
+    "tags": ["Design", "Research"],
+    "description": "Excellent for arts, humanities, and interdisciplinary studies."
+  },
+  {
+    "id": "6",
+    "name": "SRM Institute",
+    "stream": "Engineering",
+    "location": "Chennai",
+    "fees": 200000,
+    "minScore": 75,
+    "budgetLevel": 2,
+    "tags": ["Technology", "High Demand"],
+    "description": "Well-known engineering campus with modern infrastructure and strong placements."
+  },
+  {
+    "id": "7",
+    "name": "Loyola College",
+    "stream": "Commerce",
+    "location": "Chennai",
+    "fees": 100000,
+    "minScore": 65,
+    "budgetLevel": 1,
+    "tags": ["Business"],
+    "description": "Affordable and well-regarded for commerce and business studies."
+  },
+  {
+    "id": "8",
+    "name": "Manipal University",
+    "stream": "Medical",
+    "location": "Bengaluru",
+    "fees": 280000,
+    "minScore": 75,
+    "budgetLevel": 3,
+    "tags": ["Healthcare", "Research"],
+    "description": "Popular private university with strong medical and health sciences programs."
+  }
+]
