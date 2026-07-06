@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuturePath | College Counseling App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">For 12th-pass students</p>
+          <h1>FuturePath helps students choose the right college with confidence.</h1>
+          <p class="hero-text">
+            Take a quick quiz, discover matching colleges, compare options, and save your favorites in one place.
+          </p>
+          <button id="scrollToQuiz" class="btn btn-primary">Start counseling</button>
+        </div>
+        <div class="hero-card">
+          <h3>What this app does</h3>
+          <ul>
+            <li>Smart college recommendations</li>
+            <li>Filter by stream, score, fee, and location</li>
+            <li>Shortlist and compare colleges</li>
+            <li>Guidance for next steps</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="feature-grid">
+        <article class="card">
+          <h3>Quiz-based suggestions</h3>
+          <p>Answer a few simple questions to receive personalized recommendations.</p>
+        </article>
+        <article class="card">
+          <h3>Easy college filters</h3>
+          <p>Find colleges based on marks, fees, preferred city, and academic stream.</p>
+        </article>
+        <article class="card">
+          <h3>Shortlist and compare</h3>
+          <p>Save the colleges you like and compare them side by side.</p>
+        </article>
+      </section>
+
+      <section id="counseling" class="section">
+        <div class="section-heading">
+          <h2>Take the student guidance quiz</h2>
+          <p>Tell us about your interests and we will suggest the best-fit colleges.</p>
+        </div>
+
+        <form id="quizForm" class="card quiz-form">
+          <label>
+            What do you want to study?
+            <select name="stream" required>
+              <option value="">Select</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Medical">Medical</option>
+              <option value="Commerce">Commerce</option>
+              <option value="Arts">Arts</option>
+              <option value="Computer Science">Computer Science</option>
+            </select>
+          </label>
+
+          <label>
+            What kind of career interests you most?
+            <select name="career" required>
+              <option value="">Select</option>
+              <option value="Technology">Technology</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Business">Business</option>
+              <option value="Design">Design</option>
+              <option value="Research">Research</option>
+            </select>
+          </label>
+
+          <label>
+            Your preferred budget for college fees?
+            <select name="budget" required>
+              <option value="">Select</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred study location?
+            <select name="location" required>
+              <option value="">Select</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Anywhere">Anywhere</option>
+            </select>
+          </label>
+
+          <label>
+            Your expected percentage?
+            <select name="score" required>
+              <option value="">Select</option>
+              <option value="85">85% and above</option>
+              <option value="75">75% - 84%</option>
+              <option value="65">65% - 74%</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Get recommendations</button>
+        </form>
+      </section>
+
+      <section id="results" class="section">
+        <div class="section-heading">
+          <h2>Recommended colleges</h2>
+          <p>Based on your answers and the college database.</p>
+        </div>
+
+        <div class="filters card">
+          <label>
+            Stream
+            <select id="filterStream">
+              <option value="All">All</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Medical">Medical</option>
+              <option value="Commerce">Commerce</option>
+              <option value="Arts">Arts</option>
+              <option value="Computer Science">Computer Science</option>
+            </select>
+          </label>
+          <label>
+            Location
+            <select id="filterLocation">
+              <option value="All">All</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Chennai">Chennai</option>
+            </select>
+          </label>
+          <label>
+            Max fees (₹)
+            <input id="filterFee" type="number" placeholder="500000" />
+          </label>
+        </div>
+
+        <div id="resultSummary" class="summary-box"></div>
+        <div id="collegeList" class="college-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Shortlist</h2>
+          <p>Save the colleges you want to review again later.</p>
+        </div>
+        <div id="shortlistList" class="college-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Compare colleges</h2>
+          <p>Select up to three colleges for quick comparison.</p>
+        </div>
+        <div id="compareList" class="compare-box"></div>
+      </section>
+
+      <section class="section counselor-card card">
+        <h2>Need personal guidance?</h2>
+        <p>Book a counseling call with our team to discuss your next step.</p>
+        <button class="btn btn-secondary">Talk to a counselor</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
